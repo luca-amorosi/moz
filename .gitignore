@@ -1,0 +1,3 @@
+# Files git needs to ignore.
+.idea
+site/

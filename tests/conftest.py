@@ -26,7 +26,7 @@ def import_module():
 
 def clean_maya_app_dir():
     """Delete files created during test session in temp/maya directory."""
-    maya_temp_dir = FILE_PATH.parents[0].joinpath("temp", "maya")
+    maya_temp_dir = FILE_PATH.parent.joinpath("temp", "maya")
     shutil.rmtree(maya_temp_dir)
 
     # Recreate maya folder.
